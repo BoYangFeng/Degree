@@ -1,7 +1,7 @@
 import os
 
 class Config:
-    SECRET_KEY = os.environ.get('SECRET_KEY')
+    SECRET_KEY = os.environ.get('SECRET_KEY') or 'Ym95YW5nZmVuZw=='
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True
     DEGREE_MAIL_SUBJECT_PREFIX = '[Degree]'
     DEGREE_MAIL_SENDER = 'Degree Admin <moon_boyangfeng@sina.com>'
